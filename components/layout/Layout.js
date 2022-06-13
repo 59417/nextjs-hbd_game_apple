@@ -13,6 +13,7 @@ function Layout(props) {
 
     return (
         <div className={classes.container}>
+            <div className={classes.text}>請移至手機裝置</div>
             <div className={classes.banner}>
                 <div className={classes.apples}> 
                     <div><Image src="/apple_icon2.png" alt="banner" width="100%" height="100%"/></div>

@@ -3,12 +3,22 @@
     overflow: scroll;
 }
 
+.text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
 .banner {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* z-index: 5; */
 }
 
 .apples {
@@ -21,6 +31,26 @@
 
 .main {
     overflow: scroll;
+}
+
+
+
+@media (min-width: 415px) {
+    .text {
+        display: block;
+    }
+    .banner, .main {
+        display: none;
+    }
+}
+  
+@media (min-height: 897px) {
+    .text {
+        display: block;
+    }
+    .banner, .main {
+        display: none;
+    }
 }
 
 

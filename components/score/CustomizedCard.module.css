@@ -20,12 +20,8 @@
     position: relative;
 }
 
-/* .content_wrapper {
-    min-height: calc(92vw * 2 / 3);
-} */
-
 .btn_wrapper {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .btn_wrapper button {
@@ -45,9 +41,3 @@
     }
 
 }
-
-/* @media (max-height: 667px) {
-
-    
-
-} */
