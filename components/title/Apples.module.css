@@ -1,5 +1,8 @@
 .wrapper {
+    position: absolute;
+    top: calc(100% - 220px);
     width: 100vw;
+    margin-bottom: -5rem;
 }
 
 .img_wrapper {
@@ -9,8 +12,14 @@
 }
 
 
+@media (max-height: 812px) {
+    .wrapper {
+        top: calc(100% - 220px + 2rem);
+    }
+}
+
 @media (max-height: 667px) {
     .wrapper {
-        margin-bottom: -5rem;
+        top: calc(100% - 220px + 5rem);
     }
 }

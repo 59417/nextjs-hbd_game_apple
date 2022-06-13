@@ -57,15 +57,13 @@ function CustomizedCard(props) {
                                     &ensp;&ensp;
                                     基於我不相信妳會第一次就全答對，
                                     所以先恭喜妳解鎖生日賀卡哈哈哈.
-                                    挑照片的時候發現我們真ㄉ去ㄌ好多地方，
-                                    照片超難選！!
-                                    但很慶幸妳都不會催我拍照XD
-                                    在我待業漂泊ㄉ這段時期有妳隨時殼以揪出門、
-                                    一起經歷些瘋狂荒謬ㄉ事，
-                                    真ㄉ是留下ㄌ很美好ㄉ回憶❤️
+                                    出去玩照片超多超難選！!
+                                    在我待業漂泊ㄉ這段時期有妳隨時揪出門、
+                                    經歷些瘋狂荒謬ㄉ事，
+                                    真ㄉ留下ㄌ各種美好回憶❤️
                                     打這樣應該不會太噁心ㄅ哈哈
-                                    總之恭喜妳蒐集到ㄌ25顆蘋果過25歲生日！
-                                    祝&ensp;<a>#一切安好</a>&ensp;還要&ensp;<a>#越來越快樂🤓</a>
+                                    總之蒐集到25顆蘋果ㄉ25歲蘋果生快！
+                                    願&ensp;<a>#一切安好</a>&ensp;<a>#越來越快樂🤓</a>
                                     &ensp;by&ensp;17
                                 </p>
                             </div>
@@ -76,7 +74,7 @@ function CustomizedCard(props) {
             <div className={classes.btn_wrapper}>
                 <div className="buttons">
                     <button className="button is-success is-light" onClick={goAllPostcards}>
-                        <Image src="/unlock.png" alt="go" width="20px" height="25px"/>
+                        <Image src="/unlock.png" alt="go" width="14px" height="18px"/>
                         解鎖所有明信片
                     </button>
                     <button className="button is-info is-light" onClick={() => router.back()}>&#8634;&ensp;重新挑選金蘋果</button>

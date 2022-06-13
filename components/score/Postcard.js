@@ -18,22 +18,22 @@ function Postcard(props) {
     return (
         <div className={classes.wrapper}>
             <div className={classes.head}>
-                <div className="columns is-multiline is-mobile" style={{margin: '0 0 1rem 0'}}>
+                <div className="columns is-multiline is-mobile" style={{margin: 0}}>
                     <div className="column is-one-fifth" style={{padding: '0 1rem'}}>
-                        <figure className="image is-64x64">
+                        <figure className="image is-48x48">
                             <Image className="is-rounded" src='/17icon.png' alt="postcard"  objectFit='cover' layout="fill" />
                         </figure>
                     </div>
                     <div className="column is-three-fifths" style={{padding: '0 1rem'}}>
-                        <h4 className="title is-4" style={{marginBottom: '0.5rem'}}>
+                        <h6 className="title is-6" style={{marginBottom: '0rem'}}>
                             17大正妹
                             <span style={{fontWeight: 300, fontSize: '0.8rem', marginLeft: '0.5rem'}}>6月8日</span>
-                        </h4>
-                        <p>寄給我&ensp;
+                        </h6>
+                        <p style={{fontSize: '0.8rem'}}>寄給我&ensp;
                             <span style={{display: 'inline-block', transform: 'scale(2, 1)', fontWeight: 200, fontSize: '0.8rem'}}>v</span>
                         </p>
                     </div>
-                    <div className="column" style={{padding: '1rem 1rem 0 0', transform: 'scaleY(-1)', fontSize: '2rem', textAlign: 'right'}}>
+                    <div className="column" style={{padding: '1rem 1rem 0 0', transform: 'scaleY(-1)', fontSize: '1.5rem', textAlign: 'right'}}>
                         &crarr;
                     </div>
                 </div>
@@ -49,8 +49,8 @@ function Postcard(props) {
                         />
                     </figure>
                 </div>
-                <div className="card-content">
-                    <div className="media">
+                <div className="card-content" style={{padding: '0.5rem'}}>
+                    <div className="media" style={{marginBottom: '0.5rem'}}>
                         <div className="media-left">
                             <figure className="image is-48x48">
                                 <Image 
@@ -74,8 +74,7 @@ function Postcard(props) {
                         <a>{data.hashtags[0]}&ensp;</a>
                         <a>{data.hashtags[1]}</a>
                         <br/>
-                        <br/>
-                        <p>{data.timestamp}</p>
+                        <p style={{marginTop: '0.3rem'}}>{data.timestamp}</p>
                     </div>
                 </div>
             </div>

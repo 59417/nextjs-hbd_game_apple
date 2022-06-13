@@ -18,6 +18,10 @@
     margin-top: 2rem;
 }
 
+.btn_wrapper button {
+    font-size: 0.8rem;
+}
+
 
 @media (max-height: 667px) {
 

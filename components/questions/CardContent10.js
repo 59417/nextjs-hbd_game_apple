@@ -47,10 +47,10 @@ function CardContent10(props) {
                         src={ques.imgs[0]} 
                         alt="pic" 
                         width="240px" 
-                        height="340px" 
+                        height="330px" 
                     />
                 </div>
-                <div style={{width: '100%', height: '1rem', backgroundColor: 'rgb(255, 242, 175)'}}></div>
+                <div className={classes.img_bottom} ></div>
             </div>
             <div className={classes.inputans}>
                 <input 

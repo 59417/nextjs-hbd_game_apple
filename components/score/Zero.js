@@ -36,7 +36,7 @@ function Zero() {
             </div>
             <div className="card">
                 <div className="card-image" style={{width: '92vw'}}>
-                    <figure className="image is-1by1" >
+                    <figure className="image is-5by4" >
                         <Image 
                             src="/pics/fun.JPG"
                             alt="postcard" 

@@ -20,12 +20,16 @@
     position: relative;
 }
 
-.content_wrapper {
+/* .content_wrapper {
     min-height: calc(92vw * 2 / 3);
-}
+} */
 
 .btn_wrapper {
     margin-top: 2rem;
+}
+
+.btn_wrapper button {
+    font-size: 0.8rem;
 }
 
 
@@ -36,12 +40,14 @@
         display: none;
     }
 
-}
-
-@media (max-height: 667px) {
-
     .btn_wrapper {
         margin-top: 0.5rem;
     }
 
 }
+
+/* @media (max-height: 667px) {
+
+    
+
+} */
