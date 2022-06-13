@@ -7,3 +7,10 @@
     height: 220px;
     position: relative;
 }
+
+
+@media (max-height: 667px) {
+    .wrapper {
+        margin-bottom: -5rem;
+    }
+}

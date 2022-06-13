@@ -65,7 +65,7 @@ function Zero() {
 
                     <div className="content">
                         ㄏㄏ&ensp;<a>#HBD&ensp;</a>
-                        <time dateTime="2016-1-1" style={{marginLeft: '9.8rem'}}>8 Jun. 2022</time>
+                        <p>8 Jun. 2022</p>
                     </div>
                 </div>
             </div>

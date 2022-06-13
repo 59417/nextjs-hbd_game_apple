@@ -8,3 +8,13 @@
     left: 4vw;
     width: 92vw;
 }
+
+
+
+@media (max-height: 667px) {
+
+    .head {
+        display: none;
+    }
+
+}

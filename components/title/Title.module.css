@@ -63,3 +63,21 @@
     padding-top: 0.3rem;
 }
 
+
+@media (max-width: 375px) {
+    .wrapper {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-height: 667px) {
+    .title {
+        width: 300px;
+        height: 83px;
+    }
+
+    .content {
+        padding: 0.5rem;
+    }
+}
+

@@ -58,6 +58,7 @@ function CardContent10(props) {
                     type="text" 
                     placeholder="輸入公主英文名字"
                     onChange={handleChange}
+                    style={{fontSize: '0.8em'}}
                 />
             </div>
         </Fragment>

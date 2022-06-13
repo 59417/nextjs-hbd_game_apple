@@ -10,18 +10,18 @@
 .text1 {
     text-align: center;
     color: rgb(59, 50, 0);
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
     width: 100%;
 }
 
 .text1 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 5px;
 }
 
 .btn {
-    padding: 0 2.2rem;
+    padding: 0 1rem;
 }
 
 .btn button {
@@ -40,20 +40,20 @@
 }
 
 .text2 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .text2 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     color: red;
 }
 
 .apples {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0 1rem 1rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -66,7 +66,7 @@
 
 .btn2 {
     margin-top: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
 }
 
 .btn2 button {

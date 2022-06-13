@@ -6,8 +6,8 @@
 .text {
     text-align: center;
     color: rgb(59, 50, 0);
-    font-size: 3rem;
-    padding-bottom: 3rem;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .text h1 {

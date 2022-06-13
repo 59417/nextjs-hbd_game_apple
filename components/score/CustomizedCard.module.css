@@ -21,9 +21,27 @@
 }
 
 .content_wrapper {
-    height: calc(92vw * 2 / 3);
+    min-height: calc(92vw * 2 / 3);
 }
 
 .btn_wrapper {
     margin-top: 2rem;
+}
+
+
+
+@media (max-width: 375px) {
+
+    .head {
+        display: none;
+    }
+
+}
+
+@media (max-height: 667px) {
+
+    .btn_wrapper {
+        margin-top: 0.5rem;
+    }
+
 }

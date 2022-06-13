@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    height: 100vh;
+    overflow: scroll;
 }
 
 .banner {
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     background-color:rgb(255, 242, 175);
-    padding: 1rem;
+    padding: 0.2rem;
 }
 
 .main {

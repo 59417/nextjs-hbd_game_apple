@@ -66,18 +66,16 @@ function Postcard(props) {
                             <p className="subtitle is-6">@YiChiDaJengMei</p>
                         </div>
                     </div>
-
                     <div className="content">
                         {data.content}
                         <br/>
                         <a>#HBD&ensp;</a>
-                        <a>#25Y&ensp;</a> 
-                        <a>#老人&ensp;</a>
+                        <a>#25Y老人&ensp;</a>
                         <a>{data.hashtags[0]}&ensp;</a>
                         <a>{data.hashtags[1]}</a>
                         <br/>
                         <br/>
-                        <time dateTime="2016-1-1">{data.timestamp}</time>
+                        <p>{data.timestamp}</p>
                     </div>
                 </div>
             </div>

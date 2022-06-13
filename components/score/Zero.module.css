@@ -17,3 +17,16 @@
 .btn_wrapper {
     margin-top: 2rem;
 }
+
+
+@media (max-height: 667px) {
+
+    .head {
+        display: none;
+    }
+
+    .btn_wrapper {
+        margin-top: 0.5rem;
+    }
+
+}
