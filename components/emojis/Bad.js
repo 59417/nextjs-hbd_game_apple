@@ -29,8 +29,8 @@ function Bad(props) {
                     <Image 
                         src="/bad_face.png"
                         alt="pic" 
-                        width="200px" 
-                        height="200px" 
+                        width="150px" 
+                        height="150px" 
                     />
                 </div>
                 <div className={classes.btn_wrapper}>
