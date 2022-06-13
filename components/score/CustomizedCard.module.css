@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.head {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.img_wrapper {
+    width: 92vw;
+    height: calc(92vw * 2 / 3);
+    position: relative;
+}
+
+.content_wrapper {
+    height: calc(92vw * 2 / 3);
+}
+
+.btn_wrapper {
+    margin-top: 2rem;
+}

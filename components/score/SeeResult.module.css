@@ -1,0 +1,81 @@
+.wrapper {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text1 {
+    text-align: center;
+    color: rgb(59, 50, 0);
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+.text1 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.btn {
+    padding: 0 2.2rem;
+}
+
+.btn button {
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+/* ------- Apples -------- */
+
+.text2 {
+    text-align: center;
+    color: rgb(59, 50, 0);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.text2 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.text2 h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: red;
+}
+
+.apples {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.img_wrapper {
+    margin: auto;
+    width: 70%;
+    height: 70%;
+}
+
+.btn2 {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+.btn2 button {
+    font-size: 1.2rem;
+    color: red;
+    height: 3.4rem;
+    padding-bottom: 1rem;
+}
+
+.btn2 p {
+    padding-top: 0.2rem;
+}

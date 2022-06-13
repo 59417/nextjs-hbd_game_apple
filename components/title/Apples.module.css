@@ -1,0 +1,9 @@
+.wrapper {
+    width: 100vw;
+}
+
+.img_wrapper {
+    width: 100vw;
+    height: 220px;
+    position: relative;
+}

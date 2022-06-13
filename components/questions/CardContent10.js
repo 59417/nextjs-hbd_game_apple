@@ -1,0 +1,67 @@
+import Image from 'next/image';
+import { useState } from 'react';
+import { Fragment } from 'react';
+import classes from './CardContent10.module.css';
+// import { QA } from '../../data/data'; 
+
+function CardContent10(props) {
+
+    const { 
+        question: ques,  // { id, title, content, options, imgs, orders, ans }
+        curr_selected: currSelected,  // 1,2,3,4
+        handle_select: handleSelect,  // func
+    } = { ...props };
+
+    const [currInput, setCurrInput] = useState(null);  // input: { dirty: true/false, clean: null }
+    function handleChange(event) {
+        const typing = event.target.value;
+        if (typing) {
+            if (typing.toUpperCase().replace(/\s/g, '') === ques.princess) {
+                if (currInput !== true) {
+                    setCurrInput(true);
+                    handleSelect(1);  // setCurrSelected(1) === ques.ans
+                };
+            } else {
+                if (currInput !== false) {
+                    setCurrInput(false);
+                    handleSelect(2);  // setCurrSelected(2) !== ques.ans
+                };
+            };
+        } else {
+            setCurrInput(null);
+            handleSelect(0);  // setCurrSelected(0) disable confirm btn
+        };
+    };
+
+    return (
+        <Fragment>
+            <div className={classes.question}>
+                <div className={classes.title}>
+                    <h1>{ques.title}</h1>
+                </div>
+                <div className={classes.content}>
+                    <p>{ques.content}</p>
+                </div>
+                <div className={classes.img_10}>
+                    <Image 
+                        src={ques.imgs[0]} 
+                        alt="pic" 
+                        width="240px" 
+                        height="340px" 
+                    />
+                </div>
+                <div style={{width: '100%', height: '1rem', backgroundColor: 'rgb(255, 242, 175)'}}></div>
+            </div>
+            <div className={classes.inputans}>
+                <input 
+                    className="input is-danger" 
+                    type="text" 
+                    placeholder="輸入公主英文名字"
+                    onChange={handleChange}
+                />
+            </div>
+        </Fragment>
+    )
+};
+
+export default CardContent10;

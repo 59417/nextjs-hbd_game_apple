@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.head {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn_wrapper {
+    margin-top: 2rem;
+}

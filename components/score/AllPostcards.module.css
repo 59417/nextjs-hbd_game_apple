@@ -1,0 +1,10 @@
+.wrapper {
+    position: relative;
+}
+
+.btn_wrapper {
+    position: absolute;
+    bottom: 1rem;
+    left: 4vw;
+    width: 92vw;
+}

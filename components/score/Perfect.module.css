@@ -1,0 +1,78 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+}
+
+.wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.wrapper h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* -------- pics -------- */
+
+/* 
+.photos {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img_wrapper {
+    width: calc(100vw / 3);
+    height: calc(200vw / 9);
+    position: relative;
+}
+
+.pick {
+    background-color:rgb(38, 0, 0);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+} */
+
+
+/* -------- golden apples -------- */
+
+.apples {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img_wrapper {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    position: relative;
+}
+
+.pick {
+    margin: auto;
+    margin-top: 10%;
+    background-color:rgb(255, 157, 0);
+    border-radius: calc(100vw / 6);
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
