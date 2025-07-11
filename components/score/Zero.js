@@ -56,7 +56,14 @@ export default function Zero() {
           </div>
         </div>
       </div>
-      <div className="card">
+      <div
+        className="card"
+        style={{
+          backgroundColor: '#fff',
+          color: '#000',
+          boxShadow: `0 0.5em 1em -0.125em rgba(10.2, 10.2, 10.2, 0.1), 0 0px 0 1px rgba(10.2, 10.2, 10.2, 0.02)`,
+        }}
+      >
         <div className="card-image" style={{ width: '92vw' }}>
           <figure className="image is-5by4">
             <Image src="/pics/fun.JPG" alt="postcard" objectFit="cover" layout="fill" />
@@ -70,10 +77,12 @@ export default function Zero() {
               </figure>
             </div>
             <div className="media-content">
-              <p className="title is-4" style={{ letterSpacing: '2px' }}>
+              <p className="title is-4" style={{ color: '#000d', letterSpacing: '2px' }}>
                 17大正妹
               </p>
-              <p className="subtitle is-6">@YiChiDaJengMei</p>
+              <p className="subtitle is-6" style={{ color: '#0008' }}>
+                @YiChiDaJengMei
+              </p>
             </div>
           </div>
 

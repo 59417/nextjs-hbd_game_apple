@@ -56,7 +56,14 @@ export default function CustomizedCard({ photo: photoId }) {
           </div>
         </div>
       </div>
-      <div className="card">
+      <div
+        className="card"
+        style={{
+          backgroundColor: '#fff',
+          color: '#000',
+          boxShadow: `0 0.5em 1em -0.125em rgba(10.2, 10.2, 10.2, 0.1), 0 0px 0 1px rgba(10.2, 10.2, 10.2, 0.02)`,
+        }}
+      >
         <div className="card-image">
           <div className={classes.img_wrapper}>
             <figure className="image is-3by2">
@@ -73,7 +80,7 @@ export default function CustomizedCard({ photo: photoId }) {
           <div className="card-content" style={{ padding: '0.8rem' }}>
             <div className="media">
               <div className="media-content">
-                <h5 className="title is-5" style={{ marginBottom: '0.5rem' }}>
+                <h5 className="title is-5" style={{ color: '#000d', marginBottom: '0.5rem' }}>
                   Dear 蘋果菜
                 </h5>
                 <p>

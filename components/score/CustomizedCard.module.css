@@ -1,43 +1,44 @@
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    flex-direction: column;
-    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .head {
-    width: 100%;
-    background-color: whitesmoke;
-    padding-top: 1.2rem;
-    margin-bottom: 0.5rem;
+  width: 100%;
+  background-color: whitesmoke;
+  padding-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(59, 50, 0);
+
+  h4 {
+    color: rgb(59, 50, 0);
+  }
 }
 
 .img_wrapper {
-    width: 92vw;
-    height: calc(92vw * 2 / 3);
-    position: relative;
+  width: 92vw;
+  height: calc(92vw * 2 / 3);
+  position: relative;
 }
 
 .btn_wrapper {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .btn_wrapper button {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
-
-
 @media (max-width: 375px) {
+  .head {
+    display: none;
+  }
 
-    .head {
-        display: none;
-    }
-
-    .btn_wrapper {
-        margin-top: 0.5rem;
-    }
-
+  .btn_wrapper {
+    margin-top: 0.5rem;
+  }
 }
