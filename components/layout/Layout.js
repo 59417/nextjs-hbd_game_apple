@@ -1,32 +1,34 @@
-import { useRouter } from 'next/router';
-import Image from 'next/image';
-import { useState } from 'react';
-import classes from './Layout.module.css';
+import Image from 'next/image'
+import classes from './Layout.module.css'
 
+export default function Layout({ children }) {
+  // const date = new Date()
+  // const nowTime = date.getSeconds()
+  // console.log('Welcome!', nowTime)
 
-function Layout(props) {
-
-    const date = new Date();
-    const nowTime = date.getSeconds();
-    console.log('Welcome!', nowTime);
-
-
-    return (
-        <div className={classes.container}>
-            <div className={classes.text}>請移至手機裝置</div>
-            <div className={classes.banner}>
-                <div className={classes.apples}> 
-                    <div><Image src="/apple_icon2.png" alt="banner" width="100%" height="100%"/></div>
-                    <div><Image src="/apple_icon.png" alt="banner" width="100%" height="100%"/></div>
-                    <div><Image src="/apple_icon3.png" alt="banner" width="100%" height="100%"/></div>
-                    <div><Image src="/apple_icon.png" alt="banner" width="100%" height="100%"/></div>
-                    <div><Image src="/apple_icon4.png" alt="banner" width="100%" height="100%"/></div>
-                </div>
-            </div>
-            <main className={classes.main}>{props.children}</main>
+  return (
+    <div className={classes.container}>
+      <div className={classes.text}>請移至手機裝置</div>
+      <div className={classes.banner}>
+        <div className={classes.apples}>
+          <div style={{ position: 'relative', width: '80px', height: '80px' }}>
+            <Image src="/apple_icon2.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+          </div>
+          <div style={{ position: 'relative', width: '80px', height: '80px' }}>
+            <Image src="/apple_icon.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+          </div>
+          <div style={{ position: 'relative', width: '80px', height: '80px' }}>
+            <Image src="/apple_icon3.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+          </div>
+          <div style={{ position: 'relative', width: '80px', height: '80px' }}>
+            <Image src="/apple_icon.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+          </div>
+          <div style={{ position: 'relative', width: '80px', height: '80px' }}>
+            <Image src="/apple_icon4.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+          </div>
         </div>
-    )
-    
-} ;
-
-export default Layout;
+      </div>
+      <main className={classes.main}>{children}</main>
+    </div>
+  )
+}

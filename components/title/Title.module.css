@@ -1,78 +1,77 @@
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 7rem;
 }
 
 .title {
-    width: 360px;
-    height: 100px;
-    position: relative;
+  width: 360px;
+  height: 100px;
+  position: relative;
 }
 
 .content {
-    text-align: center;
-    margin: auto;
-    padding: 0.5rem 2rem;
+  text-align: center;
+  margin: auto;
+  padding: 0.5rem 2rem;
 }
 
 .content h1 {
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(34, 0, 0);
 }
 
 .content div {
-    width: 30px;
-    padding-top: 0.3rem;
+  width: 30px;
+  padding-top: 0.3rem;
 }
 
 .content span {
-    margin-left: 0.3rem;
-    letter-spacing: 4px;
-    color: rgb(255, 68, 68);
+  margin-left: 0.3rem;
+  letter-spacing: 4px;
+  color: rgb(255, 68, 68);
 }
 
 .content p {
-    margin: 1rem 0;
-    line-height: 2.2rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: rgb(34, 0, 0);
+  margin: 1rem 0;
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: rgb(34, 0, 0);
 }
 
 .btn_wrapper {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .btn_wrapper button {
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 1.5rem 1.5rem 1.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 0.5rem 1.8rem 0.5rem 2rem;
 }
 
 .btn_wrapper p {
-    padding-top: 0.3rem;
+  padding-top: 0.3rem;
 }
 
-
 @media (max-width: 375px) {
-    .title {
-        width: 300px;
-        height: 83px;
-    }
+  .title {
+    width: 300px;
+    height: 83px;
+  }
 }
 
 @media (max-height: 667px) {
-    .content {
-        padding: 0.5rem;
-    }
+  .content {
+    padding: 0.5rem;
+  }
 }
-

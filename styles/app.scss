@@ -1,2 +1,40 @@
 // import bulma
-@import "~bulma/bulma.sass";
+// @import "~bulma/bulma.sass";
+
+// @import 'bulma';
+
+@use 'bulma' as *;
+
+// @media (prefers-color-scheme: dark) {
+//   html,
+//   body {
+//     background-color: white;
+//     button {
+//       background-color: white;
+//       color: #363636;
+//     }
+//   }
+// }
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: white;
+
+    .button:not(.is-success):not(.is-outlined):not(.is-warning):not(.is-danger):not(.is-light):not(
+        .is-info
+      ):not(.is-primary) {
+      background-color: white !important;
+      color: #636363 !important;
+    }
+
+    .input {
+      background-color: white !important;
+      color: #636363 !important;
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.4) !important;
+      }
+    }
+  }
+}
