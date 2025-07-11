@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import classes from './AllPostcards.module.css'
 import Postcard from './Postcard'
 import Zero from './Zero'
+import classes from './AllPostcards.module.css'
 
 export default function AllPostcards() {
   const [postcard, setPostcard] = useState(9)

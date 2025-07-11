@@ -1,14 +1,15 @@
-import Image from 'next/image'
 import { useRouter } from 'next/router'
-import classes from './Postcard.module.css'
+import Image from 'next/image'
 import { POSTCARD_DATA } from '../../data/data'
+import { icon17, picMe, picUsArr } from '../../data/imgs'
+import classes from './Postcard.module.css'
 
 export default function Postcard({ score }) {
   const router = useRouter()
 
   const data = POSTCARD_DATA.find((obj) => obj.id === score)
 
-  const goHomepage = () => router.push('/welcome')
+  const onRestart = () => router.push('/welcome')
 
   return (
     <div className={classes.wrapper}>
@@ -18,7 +19,7 @@ export default function Postcard({ score }) {
             <figure className="image is-48x48">
               <Image
                 className="is-rounded"
-                src="/17icon.png"
+                src={icon17}
                 alt="postcard"
                 objectFit="cover"
                 layout="fill"
@@ -73,19 +74,14 @@ export default function Postcard({ score }) {
       >
         <div className="card-image">
           <figure className="image is-3by2">
-            <Image
-              src={`/pics/us/us${score - 1}.JPG`}
-              alt="postcard"
-              objectFit="cover"
-              layout="fill"
-            />
+            <Image src={picUsArr[score - 1]} alt="postcard" objectFit="cover" layout="fill" />
           </figure>
         </div>
         <div className="card-content" style={{ padding: '0.5rem' }}>
           <div className="media" style={{ marginBottom: '0.5rem' }}>
             <div className="media-left">
               <figure className="image is-48x48">
-                <Image src="/pics/me.JPG" alt="postcard" objectFit="cover" layout="fill" />
+                <Image src={picMe} alt="postcard" objectFit="cover" layout="fill" />
               </figure>
             </div>
             <div className="media-content">
@@ -110,7 +106,7 @@ export default function Postcard({ score }) {
         </div>
       </div>
       <div className={classes.btn_wrapper}>
-        <button className="button is-info is-light" onClick={goHomepage}>
+        <button className="button is-info is-light" onClick={onRestart}>
           <p>&#8634;&ensp;再採一次蘋果</p>
         </button>
       </div>

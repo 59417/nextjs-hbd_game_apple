@@ -1,7 +1,6 @@
-import Image from 'next/image'
 import { Fragment } from 'react'
+import Image from 'next/image'
 import classes from './CardContent.module.css'
-// import { QA } from '../../data/data';
 
 export default function CardContent({
   question: ques,

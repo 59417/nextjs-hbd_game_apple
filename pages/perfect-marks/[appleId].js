@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
 import CustomizedCard from '../../components/score/CustomizedCard'
+import styles from '../../styles/Home.module.css'
 
 export default function PerfectPage({ appleId }) {
   return (

@@ -1,9 +1,9 @@
-import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import styles from '../../styles/Home.module.css'
-import { SCORE_PATH } from '../../data/data'
+import Head from 'next/head'
 import Counting from '../../components/score/Counting'
 import SeeResult from '../../components/score/SeeResult'
+import { SCORE_PATH } from '../../data/data'
+import styles from '../../styles/Home.module.css'
 
 export default function Score({ result }) {
   const [isSeeResult, setIsSeeResult] = useState(false)

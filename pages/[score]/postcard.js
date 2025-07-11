@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
-import { SCORE_PATH } from '../../data/data'
 import Postcard from '../../components/score/Postcard'
 import Perfect from '../../components/score/Perfect'
 import Zero from '../../components/score/Zero'
+import { SCORE_PATH } from '../../data/data'
+import styles from '../../styles/Home.module.css'
 
 export default function PostcardPage({ result }) {
   const { path: currentPath } = result

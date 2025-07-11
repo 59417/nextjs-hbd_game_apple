@@ -1,11 +1,12 @@
-import Image from 'next/image'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+import { icon17, iconUnlock, picAppleIdArr } from '../../data/imgs'
 import classes from './CustomizedCard.module.css'
 
 export default function CustomizedCard({ photo: photoId }) {
   const router = useRouter()
 
-  const goAllPostcards = () => router.push('/perfect-marks/all-postcrad')
+  const onAllPostcards = () => router.push('/perfect-marks/all-postcrad')
 
   return (
     <div className={classes.wrapper}>
@@ -15,7 +16,7 @@ export default function CustomizedCard({ photo: photoId }) {
             <figure className="image is-64x64">
               <Image
                 className="is-rounded"
-                src="/17icon.png"
+                src={icon17}
                 alt="postcard"
                 objectFit="cover"
                 layout="fill"
@@ -67,12 +68,7 @@ export default function CustomizedCard({ photo: photoId }) {
         <div className="card-image">
           <div className={classes.img_wrapper}>
             <figure className="image is-3by2">
-              <Image
-                src={`/pics/apple/apple${photoId}.JPG`}
-                alt="card"
-                objectFit="cover"
-                layout="fill"
-              />
+              <Image src={picAppleIdArr[photoId - 1]} alt="card" objectFit="cover" layout="fill" />
             </figure>
           </div>
         </div>
@@ -98,8 +94,8 @@ export default function CustomizedCard({ photo: photoId }) {
       </div>
       <div className={classes.btn_wrapper}>
         <div className="buttons">
-          <button className="button is-success is-light" onClick={goAllPostcards}>
-            <Image src="/unlock.png" alt="go" width={14} height={18} />
+          <button className="button is-success is-light" onClick={onAllPostcards}>
+            <Image src={iconUnlock} alt="go" width={14} height={18} />
             解鎖所有明信片
           </button>
           <button className="button is-info is-light" onClick={() => router.back()}>

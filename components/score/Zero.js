@@ -1,11 +1,12 @@
-import Image from 'next/image'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+import { icon17, picFun, picMe } from '../../data/imgs'
 import classes from './Zero.module.css'
 
 export default function Zero() {
   const router = useRouter()
 
-  const goHomepage = () => router.push('/welcome')
+  const onRestart = () => router.push('/welcome')
 
   return (
     <div className={classes.wrapper}>
@@ -15,7 +16,7 @@ export default function Zero() {
             <figure className="image is-64x64">
               <Image
                 className="is-rounded"
-                src="/17icon.png"
+                src={icon17}
                 alt="postcard"
                 objectFit="cover"
                 layout="fill"
@@ -66,14 +67,14 @@ export default function Zero() {
       >
         <div className="card-image" style={{ width: '92vw' }}>
           <figure className="image is-5by4">
-            <Image src="/pics/fun.JPG" alt="postcard" objectFit="cover" layout="fill" />
+            <Image src={picFun} alt="postcard" objectFit="cover" layout="fill" />
           </figure>
         </div>
         <div className="card-content">
           <div className="media">
             <div className="media-left">
               <figure className="image is-48x48">
-                <Image src="/pics/me.JPG" alt="postcard" objectFit="cover" layout="fill" />
+                <Image src={picMe} alt="postcard" objectFit="cover" layout="fill" />
               </figure>
             </div>
             <div className="media-content">
@@ -93,7 +94,7 @@ export default function Zero() {
         </div>
       </div>
       <div className={classes.btn_wrapper}>
-        <button className="button is-info is-light" onClick={goHomepage}>
+        <button className="button is-info is-light" onClick={onRestart}>
           <p>&#8634;&ensp;再採一次蘋果</p>
         </button>
       </div>

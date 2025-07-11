@@ -1,7 +1,8 @@
-import Image from 'next/image'
-import { useRouter } from 'next/router'
 import { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
 import { CSSTransition } from 'react-transition-group'
+import { picAppleGold } from '../../data/imgs'
 import fadeTransition from '../../styles/transitions/fade.module.css'
 import classes from './Perfect.module.css'
 
@@ -20,7 +21,7 @@ export default function Perfect() {
     .fill()
     .map((_, i) => i + 1)
 
-  const goPerfectPage = (element) => {
+  const onPerfectPage = (element) => {
     setIsShow(!isShow)
     setTimeout(() => {
       router.push(`/perfect-marks/${element}`)
@@ -46,11 +47,11 @@ export default function Perfect() {
               <div key={element} className={classes.img_wrapper}>
                 {element !== 5 ? (
                   <Image
-                    src={`/golden_apple.png`}
+                    src={picAppleGold}
                     alt={element}
                     objectFit="cover"
                     layout="fill"
-                    onClick={() => goPerfectPage(element)}
+                    onClick={() => onPerfectPage(element)}
                   />
                 ) : (
                   <div className={classes.pick}>

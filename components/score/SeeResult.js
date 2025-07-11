@@ -1,6 +1,7 @@
-import Image from 'next/image'
+import { Fragment, useState } from 'react'
 import { useRouter } from 'next/router'
-import { Fragment, useEffect, useState } from 'react'
+import Image from 'next/image'
+import { iconInfo, btnApple } from '../../data/imgs'
 import classes from './SeeResult.module.css'
 
 export default function SeeResult({ result }) {
@@ -21,7 +22,7 @@ export default function SeeResult({ result }) {
 
   const handleClick = () => setIsApple((prev) => !prev)
 
-  const goPostcard = () => router.push(`/${path}/postcard`)
+  const onPostcard = () => router.push(`/${path}/postcard`)
 
   const seeApples = () => {
     if (isApple) {
@@ -52,8 +53,8 @@ export default function SeeResult({ result }) {
             })}
           </div>
           <div className={classes.btn2}>
-            <button className="button is-primary is-light" onClick={goPostcard}>
-              <Image src="/envelope_info.png" alt="go" width={36} height={30} />
+            <button className="button is-primary is-light" onClick={onPostcard}>
+              <Image src={iconInfo} alt="go" width={36} height={30} />
               <p>&ensp;果園ㄉ信箱有新通知！</p>
             </button>
           </div>
@@ -67,7 +68,7 @@ export default function SeeResult({ result }) {
           </div>
           <div className={classes.btn}>
             <button className="button is-danger is-light" onClick={handleClick}>
-              <Image src="/apple_btn.png" alt="go" width={30} height={30} />
+              <Image src={btnApple} alt="go" width={30} height={30} />
               &ensp;前往蘋果園
             </button>
           </div>

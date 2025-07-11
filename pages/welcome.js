@@ -1,13 +1,13 @@
-import Head from 'next/head'
 import { useState, useEffect, useRef } from 'react'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head'
 import { CSSTransition } from 'react-transition-group'
+import Title from '../components/title/Title'
+import Apples from '../componenßts/title/Apples'
 import slideTransition from '../styles/transitions/titleSlide.module.css'
 import fadeTransition from '../styles/transitions/titleFade.module.css'
-import Title from '../components/title/Title'
-import Apples from '../components/title/Apples'
+import styles from '../styles/Home.module.css'
 
-export default function Test() {
+export default function Welcome() {
   const titleRef = useRef(null)
   const applesRef = useRef(null)
 

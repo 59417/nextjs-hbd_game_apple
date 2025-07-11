@@ -1,8 +1,6 @@
+import { useState, Fragment } from 'react'
 import Image from 'next/image'
-import { useState } from 'react'
-import { Fragment } from 'react'
 import classes from './CardContent10.module.css'
-// import { QA } from '../../data/data';
 
 export default function CardContent10({
   question: ques, // { id, title, content, options, imgs, orders, ans }

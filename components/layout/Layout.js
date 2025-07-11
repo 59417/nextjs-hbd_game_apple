@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { iconApple1, iconApple2, iconApple3, iconApple4 } from '../../data/imgs'
 import classes from './Layout.module.css'
 
 export default function Layout({ children }) {
@@ -12,19 +13,19 @@ export default function Layout({ children }) {
       <div className={classes.banner}>
         <div className={classes.apples}>
           <div style={{ position: 'relative', width: '80px', height: '80px' }}>
-            <Image src="/apple_icon2.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+            <Image src={iconApple2} alt="banner" style={{ objectFit: 'contain' }} fill />
           </div>
           <div style={{ position: 'relative', width: '80px', height: '80px' }}>
-            <Image src="/apple_icon.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+            <Image src={iconApple1} alt="banner" style={{ objectFit: 'contain' }} fill />
           </div>
           <div style={{ position: 'relative', width: '80px', height: '80px' }}>
-            <Image src="/apple_icon3.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+            <Image src={iconApple3} alt="banner" style={{ objectFit: 'contain' }} fill />
           </div>
           <div style={{ position: 'relative', width: '80px', height: '80px' }}>
-            <Image src="/apple_icon.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+            <Image src={iconApple1} alt="banner" style={{ objectFit: 'contain' }} fill />
           </div>
           <div style={{ position: 'relative', width: '80px', height: '80px' }}>
-            <Image src="/apple_icon4.png" alt="banner" style={{ objectFit: 'contain' }} fill />
+            <Image src={iconApple4} alt="banner" style={{ objectFit: 'contain' }} fill />
           </div>
         </div>
       </div>
