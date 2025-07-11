@@ -15,7 +15,7 @@ export default function Title({ show: setIsShow, ref }) {
   return (
     <div ref={ref} className={classes.wrapper}>
       <div className={classes.title}>
-        <Image src={txtTitle} alt="go" objectFit="cover" layout="fill" />
+        <Image src={txtTitle} alt="go" objectFit="cover" layout="fill" priority />
       </div>
       <div className={classes.content}>
         <h1>Hi~歡迎來到</h1>
