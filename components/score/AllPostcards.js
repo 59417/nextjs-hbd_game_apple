@@ -13,7 +13,7 @@ function AllPostcards() {
             <div className={classes.btn_wrapper}>
                 <div className="buttons" style={{justifyContent: 'space-between'}}>
                     {
-                        postcard===0 ? <button className="button is-success" isdisable={true} style={{visibility: 'hidden'}} />
+                        postcard===0 ? <button className="button is-success" disabled={true} style={{visibility: 'hidden'}} />
                         : <button className="button is-success is-light" onClick={() => setPostcard(postcard-1)}>
                             &#60;&ensp;對{postcard-1}題</button>
                     }
